@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <!-- ionic meta tags -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!-- custom meta tags -->
+    <meta name="format-detection" content="telephone=no"> <!-- no auto telephone linking -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- can be saved to home screen on ios -->
+    <title>janusze-interfejsow</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!--<link rel="stylesheet" href="bower_components/ionic/release/css/ionic.css" />-->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css main/styles/app.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="main/styles/main.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+  <body ng-app="januszeInterfejsow">
+
+  <!-- Add your site or application content here -->
+  <div class="header">
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand logo" href="#/">
+            <img class="logo-img" alt="wąsy" src="main/assets/images/logo-moustache.png">
+            <span>Janusze Interfejsów</span>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="js-navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li ng-class="{active: $route.current.activetab == 'main'}" ng-show="$root.user.authenticated">
+              <a href="#/main">
+                <span class="glyphicon glyphicon-home"></span>
+                <span class="hidden-sm" translate="global.menu.home">Home</span>
+              </a>
+            </li>
+            <li ng-class="{active: $route.current.activetab == 'users'}" ng-show="$root.user.authenticated">
+              <a href="#/users">
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="hidden-sm" translate="global.menu.home">Users</span>
+              </a>
+            </li>
+            <li ng-class="{active: $route.current.activetab == 'projects'}" ng-show="$root.user.authenticated">
+              <a href="#/projects">
+                <span class="glyphicon glyphicon-tasks"></span>
+                <span class="hidden-sm" translate="global.menu.home">Projects</span>
+              </a>
+            </li>
+            <li ng-class="{active: $route.current.activetab == 'reports'}" ng-show="$root.user.authenticated">
+              <a href="#/reports">
+                <span class="glyphicon glyphicon-stats"></span>
+                <span class="hidden-sm" translate="global.menu.home">Reports</span>
+              </a>
+            </li>
+            <li ng-class="{active: $route.current.activetab == 'logout'}" ng-show="$root.user.authenticated">
+              <a href="#/logout">
+                <span class="glyphicon glyphicon-off"></span>
+                <span class="hidden-sm" translate="global.menu.home">Log out</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div ng-view=""></div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <p><span class="glyphicon glyphicon-heart"></span> from the Janusze Interfejsów team</p>
+    </div>
+  </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/ionic/release/js/ionic.js"></script>
+    <script src="bower_components/ionic/release/js/ionic-angular.js"></script>
+    <script src="bower_components/ngCordova/dist/ng-cordova.js"></script>
+    <script src="bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.js"></script>
+    <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="bower_components/localforage/dist/localforage.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/app.js -->
+    <!-- inject:js -->
+    <script src="main/main.js"></script>
+    <script src="main/services/main-serv.js"></script>
+    <script src="main/controllers/users.js"></script>
+    <script src="main/controllers/reports.js"></script>
+    <script src="main/controllers/projects.js"></script>
+    <script src="main/controllers/notimplemented.js"></script>
+    <script src="main/controllers/main.js"></script>
+    <script src="main/controllers/logout.js"></script>
+    <script src="main/controllers/loginscreen.js"></script>
+    <script src="main/controllers/debug-ctrl.js"></script>
+    <script src="main/controllers/about.js"></script>
+    <script src="main/constants/config-const.js"></script>
+    <script src="app.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+  </body>
+</html>

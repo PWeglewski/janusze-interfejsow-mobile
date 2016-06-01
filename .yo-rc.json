@@ -1,0 +1,27 @@
+{
+  "generator-m-ionic": {
+    "answers": {
+      "appName": "janusze-interfejsow",
+      "appId": "pl.lodz.p.pi",
+      "ionicCss": true,
+      "bowerPackages": [
+        "angular-dynamic-locale#~0.1.27",
+        "angular-translate#~2.11.0",
+        "angular-translate-loader-static-files#~2.11.0",
+        "localforage#~1.4.0"
+      ],
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "plugins": [
+        "cordova-plugin-device",
+        "cordova-plugin-dialogs",
+        "ionic-plugin-keyboard",
+        "cordova-plugin-network-information"
+      ],
+      "appModule": "januszeInterfejsow",
+      "ecosystems": []
+    }
+  }
+}

@@ -1,0 +1,240 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/* ==========================================================================
+Logo styles
+========================================================================== */
+.navbar-brand.logo {
+  padding: 5px 15px;
+}
+
+.logo .logo-img {
+  height: 45px;
+  display: inline-block;
+}
+
+/* Project styles */
+.project {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.project-header {
+  height: 50px;
+  background-color: #00b3ee;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 46px;
+}
+
+.project-title {
+  background-color: #0000FF;
+  color: white;
+  width: 14%;
+  margin: auto;
+  float: left;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  line-height: 50px;
+}
+
+.project-summary {
+  float: right;
+  width: 86%;
+}
+
+.summary-cell {
+  width: 17%;
+  background-color: white;
+  border: 2px solid #00b3ee;
+  border-left: none;
+  float: left;
+}
+
+.summary-cell-right {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 15%;
+  font-weight: bold;
+}
+
+.project-body{
+  width: 100%;
+}
+
+.task-body{
+  height: 30px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: 2px solid #00b3ee;
+  border-top: none;
+}
+
+.add-task-button{
+  width: 14%;
+  height: 30px;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 0px;
+}
+
+.task-title{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 28px;
+  width: 14%;
+  background-color: #b3d4fc;
+  float: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.task-input{
+  height: 28px;
+}
+
+.task-regular-cell{
+  width: 14.65%;
+  background-color: white;
+  border-right: 2px solid #00b3ee;
+  /*border-left: none;*/
+  float: left;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 28px;
+}
+
+.task-summary-cell{
+  width: 12%;
+  font-weight: bold;
+  border: none;
+}
+/* Project description styles */
+
+.project-desc {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.project-desc-header {
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.project-desc-title {
+  width: 14%;
+  margin: auto;
+  float: left;
+  height: 100%;
+  line-height: 50px;
+}
+
+.project-desc-summary {
+  float: right;
+  width: 86%;
+}
+
+.desc-summary-cell {
+  width: 17%;
+  float: left;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.desc-summary-cell-right {
+  width: 15%;
+}
+
