@@ -14,7 +14,7 @@
 /app/main/assets/fonts/ionicons.*
 
 # cordova
-/platforms/
+
 /plugins/
 /res/*/current/
 

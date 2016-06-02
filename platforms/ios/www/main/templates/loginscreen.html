@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="container">
+    <div class="col-md-4 col-md-offset-4">
+      <h1 translate="login.title">Log in</h1>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <div aria-hidden="true" class="alert alert-danger ng-hide" ng-show="vm.authenticationError"
+           translate="login.messages.error.authentication"><strong>Failed to sign in!</strong> Please check your
+        credentials and try again.
+      </div>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <div class="alert alert-danger" ng-show="loginscreen.authenticationError" translate="login.messages.error.authentication" aria-hidden="false"><strong>Failed to log in!</strong> Please check your credentials and try again.</div>
+      <form class="form ng-valid ng-dirty ng-valid-parse" role="form" ng-submit="vm.login($event)">
+        <div class="form-group">
+          <label for="username" translate="global.form.username">Username</label>
+          <input aria-invalid="false" class="form-control ng-valid ng-not-empty ng-dirty ng-valid-parse ng-touched"
+                 id="username" placeholder="Your username" ng-model="loginscreen.username" type="text">
+        </div>
+        <div class="form-group">
+          <label for="password" translate="login.form.password">Password</label>
+          <input aria-invalid="false" class="form-control ng-untouched ng-valid ng-not-empty ng-dirty ng-valid-parse"
+                 id="password" placeholder="Your password" ng-model="loginscreen.password" type="password">
+        </div>
+        <div class="alert alert-warning">
+          <a class="alert-link" href="" ng-click="vm.requestResetPassword()" translate="login.password.forgot">Did you
+            forget your password?</a>
+        </div>
+        <button ng-click="loginscreen.login()" type="submit" class="btn btn-primary" translate="login.form.button">Sign in</button>
+      </form>
+      <p></p>
+    </div>
+  </div>
+</div>
+
