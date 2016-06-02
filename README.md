@@ -130,3 +130,9 @@ Start by reading our:
 
 ## License
 Code licensed under MIT. Docs under Apache 2. PhoneGap is a trademark of Adobe.
+
+
+export ANDROID_HOME=/home/piotr/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+gulp --cordova 'build android --release' --force-build
